@@ -9,3 +9,18 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(227, 203, 142);
+  border-radius: 2rem;
+  padding: 25px;
+}
