@@ -20,12 +20,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(227, 203, 142);
 }
 
 .card {
   width: 60rem;
   height: 60rem;
-  background-color: rgb(227, 203, 142);
   border-radius: 2rem;
   padding: 2.5rem;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 1rem;
+}
+
+.company,
+.mission,
+.programs,
+.contact {
+  flex: auto;
+  width: 100%;
+}
+
+.company {
+  background-color: aqua;
+  flex-grow: 0.5;
+}
+
+.mission {
+  background-color: blueviolet;
+  flex-grow: 1;
+}
+
+.mission p {
+  letter-spacing: 0.05rem;
+  font-size: 1.7rem;
+}
+
+.programs {
+  background-color: chocolate;
+  flex-grow: 3;
+}
+
+.contact {
+  background-color: darksalmon;
+  flex-grow: 0.5;
 }
