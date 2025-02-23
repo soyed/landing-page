@@ -28,7 +28,7 @@ body {
   height: 60rem;
   border-radius: 2rem;
   padding: 2.5rem;
-  background-color: white;
+  background-color: darkgray;
 
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ body {
 
 .company,
 .mission,
-.programs,
+.service,
 .contact {
   flex: auto;
   width: 100%;
@@ -59,9 +59,61 @@ body {
   font-size: 1.7rem;
 }
 
-.programs {
+.service {
   background-color: chocolate;
   flex-grow: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+
+.service h2 {
+  text-align: center;
+  width: 100%;
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+}
+
+.service .programs {
+  width: 100%;
+  flex-grow: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  row-gap: 1.7rem;
+  background-color: bisque;
+}
+
+.programs > p {
+  flex: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.programs > p:nth-child(1) {
+  background-color: lightblue;
+}
+
+.programs > p:nth-child(2) {
+  background-color: lightcoral;
+}
+
+.service p {
+  flex-grow: 1;
 }
 
 .contact {
