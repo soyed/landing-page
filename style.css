@@ -118,5 +118,13 @@ body {
 
 .contact {
   background-color: darksalmon;
-  flex-grow: 0.5;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact i {
+  font-size: 2.5rem;
 }
