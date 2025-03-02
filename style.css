@@ -10,12 +10,19 @@
   font-size: 62.5%;
 
   --primary-color: rgb(157, 111, 91);
+  --primary-color-light: rgba(157, 111, 91, 0.889);
+
   --secondary-color: darkgray;
+  --black-color: black;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
+}
+
+a:link, a:visited{
+  text-decoration: none;
 }
 
 .main {
@@ -35,7 +42,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .company,
@@ -50,7 +57,6 @@ body {
   flex-grow: 1;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -123,19 +129,72 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.brochure a {
+  margin-left: 0.3rem;
+  text-decoration: underline;
+  color: black;
 }
 
 .contact {
   flex-grow: 1;
+  padding: 0rem;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   border-top: var(--primary-color) 0.1rem;
   border-top-style: groove;
 }
 
 .contact i {
-  font-size: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.contact i:hover,
+.contact i:active {
+  background-color: var(--primary-color-light);
+  transition: ease-in;
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    width: 90%;
+    min-height: min-content;
+  }
+
+  .mission p {
+    line-height: 1.75rem;
+    font-size: 1.3rem;
+  }
+
+  .service h3 {
+    font-size: 1.5rem;
+  }
+
+  .programs p {
+    font-size: 1.2rem;
+  }
+
+  .service .brochure {
+    font-size: 1.2rem;
+  }
+
+  .contact i {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.75rem;
+  }
 }
